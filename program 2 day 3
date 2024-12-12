@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int a[]={2, 4, 6 , 8, 10}, n=5, i, k=5, result = -1;
+    for(i=0; i<n; i++)
+    {
+        if(a[i]<=k)
+        {
+            result = i;
+        }
+        else
+        {
+        break;
+        }
+    }
+    printf("the floor of %d is %d\n", k, result);
+}
