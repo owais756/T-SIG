@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+int a[], i, n, target, found=0;
+printf("Enter the size of the array\n");
+scanf("%d\n", &n);
+printf("Enter the elements of the array\n");
+for(i=0; i<n; i++)
+{
+scanf("%d", &a[i]);
+}
+printf("enter the element to be searched\n");
+scanf("%d", &target);
+for(i=0; i<n; i++)
+{
+    if(a[i]==target)
+    {
+        printf("element found at %d element\n", i);
+        found =1;
+        break;
+    }
+}
+    if(!found)
+    {
+        printf("the target element not found in the given array\n");
+    }
+    return 0;
+}
