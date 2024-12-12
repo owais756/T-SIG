@@ -1,0 +1,19 @@
+// FIND FACTORIAL OF AN GIVEN INTEGER//
+#include <stdio.h>
+
+int main() {
+    int num, factorial = 1, i;
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+
+    if (num < 0) {
+        printf("Factorial of a negative number is not possible\n");
+        return 0;
+    } else {
+        for (i = 1; i <= num; i++) { 
+            factorial *= i;
+        }
+        printf("Factorial of the given number is: %d\n", factorial);
+    }
+    return 0;
+}
