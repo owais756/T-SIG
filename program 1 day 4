@@ -1,0 +1,21 @@
+public class ArmstrongNumber
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("Armstrong numbers between 1 and 1000:");
+        for (int i = 1; i <= 1000; i++) 
+        {
+            int temp = i, sum = 0; // har i ke liye sum aur temp initialize karre
+            while (temp > 0) 
+            {
+                int r = temp % 10; // Jo bhi number hai uske last digit ku find karo
+                sum += r * r * r;  // vo jo digit find kare uska cube karke sum me add karo
+                temp /= 10;        // vo jo last digit find kare usku nikalo number se aur ab same operations karo next iterations me
+            }
+            if (sum == i) 
+            {
+                System.out.println(i);
+            }
+        }
+    }
+}
