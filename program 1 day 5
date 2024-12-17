@@ -1,0 +1,21 @@
+// array me jo even numbers rehte uska sum karna hai//
+#include <stdio.h>
+
+int main()
+{
+    int n, sum = 0;
+    printf("Enter the number of elements in the array: ");
+    scanf("%d", &n);
+    int a[n];
+    printf("Enter the elements of the array:\n");
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &a[i]);
+        if (a[i] % 2 == 0)
+        {
+            sum = sum + a[i];
+        }
+    }
+    printf("The sum of all even numbers in the array is: %d\n", sum);
+    return 0;
+}
